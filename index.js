@@ -9,7 +9,7 @@ let PORT = 7000;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST", "PUT"],
     credentials:true
   })
