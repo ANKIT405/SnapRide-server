@@ -20,8 +20,8 @@ app.use(
 
 app.use(express.json());
 
-   connect()
-app.route("/").get((req, res) => {
+app.route("/").get(async (req, res) => {
+  await connect()
   res.json({ message: "HELLO I AM SERVER!" });
 });
 
