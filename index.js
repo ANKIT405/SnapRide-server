@@ -3,6 +3,7 @@ let express = require("express");
 let app = express();
 const nodemailer = require("nodemailer");
 let cors = require("cors");
+let connect=require("./config.js")
 let Collection = require("./database.js");
 
 let PORT = 7000;
@@ -19,7 +20,8 @@ app.use(
 
 app.use(express.json());
 
-app.route("/").get((req, res) => {
+app.route("/").get(async(req, res) => {
+  await connect()
   res.json({ message: "HELLO I AM SERVER!" });
 });
 
