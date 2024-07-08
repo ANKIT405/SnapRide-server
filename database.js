@@ -1,5 +1,5 @@
 let mongoose=require("mongoose")
-require("./config")
+
 let schema=new mongoose.Schema({
       name:String,
       email:String,
