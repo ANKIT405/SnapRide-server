@@ -1,6 +1,6 @@
 let mongoose=require("mongoose")
 function connect(){
-mongoose.connect("mongodb://0.0.0.0:27017/Userdetails",{
+mongoose.connect("mongodb://localhost:27017/Userdetails",{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
