@@ -89,8 +89,8 @@ app.route("/Email").post(async (req, res) => {
   let mailOptions = {
     from: "a60454605@gmail.com",
     to: "kankit3734@gmail.com",
-    subject: "welcome to Node.js App",
-    text: "this is an email using nodemailer in Node.js testing again",
+    subject: "Thanks For Using Our service",
+    text: `Pickup Address: ${req.body.Pickup}\n Destination Address: ${req.body.Destination}\n Pickup Time: ${req.body.Time} \n Passenger: ${req.body.Passenger}  `,
   };
   try {
     let result = await transporter.sendMail(mailOptions);
