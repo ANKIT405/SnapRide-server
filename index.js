@@ -10,7 +10,7 @@ let PORT = 7000;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://669f81bb3774f9007edf98d0--comfy-speculoos-24d819.netlify.app/",
     methods: ["GET", "POST", "PUT"],
     credentials:true
   })
